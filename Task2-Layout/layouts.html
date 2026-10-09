@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#065f46">
+    <meta name="description" content="A responsive layout showcase built with Tailwind CSS, Flexbox and CSS Grid.">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>LayoutLab | Modern Layout Showcase</title>
+</head>
+
+<body class="bg-slate-100 text-slate-800 antialiased">
+
+    <!-- HEADER -->
+    <header class="bg-emerald-800 text-white">
+        <div class="mx-auto max-w-7xl px-5 py-9 sm:px-8 sm:py-11">
+
+            <p class="text-sm font-semibold text-emerald-200">
+                Welcome to LayoutLab
+            </p>
+
+            <h1 id="home" class="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">
+                Layout<span class="text-emerald-300">Lab.</span>
+            </h1>
+
+            <p class="mt-3 max-w-xl text-sm leading-6 text-emerald-50 sm:text-base">
+                Learn how to organize web pages using Flexbox, CSS Grid and responsive design.
+            </p>
+
+            <div class="mt-5 flex flex-wrap gap-3">
+                <a href="#positions" class="rounded-lg bg-white px-5 py-3 text-sm font-semibold text-emerald-800 transition hover:bg-emerald-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                    Explore layouts →
+                </a>
+
+                <a href="#dashboard" class="rounded-lg border border-emerald-300 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700">
+                    View dashboard
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- MAIN NAVIGATION -->
+    <nav aria-label="Main navigation" class="sticky top-0 z-20 border-b border-emerald-100 bg-white shadow-sm">
+
+        <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-5 py-4 sm:px-8">
+
+            <a href="#home" class="text-xl font-extrabold tracking-tight text-emerald-800">
+                Layout<span class="text-emerald-500">Lab.</span>
+            </a>
+
+            <ul class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-medium text-slate-600">
+                <li><a href="#positions" class="transition hover:text-emerald-700">Alignment</a></li>
+                <li><a href="#comments" class="transition hover:text-emerald-700">Community</a></li>
+                <li><a href="#dashboard" class="transition hover:text-emerald-700">Dashboard</a></li>
+                <li><a href="#holy-grail" class="transition hover:text-emerald-700">Workspace</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <main class="mx-auto max-w-7xl space-y-10 px-5 py-10 sm:px-8 sm:py-14">
+
+        <!-- SECTION 1: NINE FLEXBOX POSITIONS -->
+        <section id="positions" class="scroll-mt-24 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8 lg:p-10">
+
+            <div class="mb-8 flex flex-wrap items-end justify-between gap-4">
+                <div>
+                    <p class="text-sm font-bold uppercase tracking-widest text-emerald-700">Alignment</p>
+                    <h2 class="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">The Nine Positions</h2>
+                    <p class="mt-3 max-w-2xl text-sm leading-7 text-slate-500">
+                        Explore nine ways to position an element using Flexbox alignment utilities.
+                    </p>
+                </div>
+
+                <span class="rounded-full bg-emerald-50 px-4 py-2 text-xs font-semibold text-emerald-800">
+                    Flexbox
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+                <div class="rounded-2xl border border-slate-200 p-3">
+                    <h3 class="mb-3 text-sm font-semibold">Top left</h3>
+                    <div class="flex h-40 items-start justify-start rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 p-3">
+                        <div class="rounded-lg bg-emerald-700 px-4 py-3 text-xs font-bold text-white shadow-sm">BOX</div>
+                    </div>
+                    <p class="mt-3 text-xs text-slate-500">justify-start · items-start</p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-3">
+                    <h3 class="mb-3 text-sm font-semibold">Top center</h3>
+                    <div class="flex h-40 items-start justify-center rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 p-3">
+                        <div class="rounded-lg bg-emerald-700 px-4 py-3 text-xs font-bold text-white shadow-sm">BOX</div>
+                    </div>
+                    <p class="mt-3 text-xs text-slate-500">justify-center · items-start</p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-3">
+                    <h3 class="mb-3 text-sm font-semibold">Top right</h3>
+                    <div class="flex h-40 items-start justify-end rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 p-3">
+                        <div class="rounded-lg bg-emerald-700 px-4 py-3 text-xs font-bold text-white shadow-sm">BOX</div>
+                    </div>
+                    <p class="mt-3 text-xs text-slate-500">justify-end · items-start</p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-3">
+                    <h3 class="mb-3 text-sm font-semibold">Middle left</h3>
+                    <div class="flex h-40 items-center justify-start rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 p-3">
+                        <div class="rounded-lg bg-emerald-700 px-4 py-3 text-xs font-bold text-white shadow-sm">BOX</div>
+                    </div>
+                    <p class="mt-3 text-xs text-slate-500">justify-start · items-center</p>
+                </div>
+
+                <div class="rounded-2xl border border-emerald-200 bg-emerald-50/40 p-3">
+                    <h3 class="mb-3 text-sm font-semibold">Center</h3>
+                    <div class="flex h-40 items-center justify-center rounded-xl border-2 border-dashed border-emerald-400 bg-emerald-50 p-3">
+                        <div class="rounded-lg bg-emerald-700 px-4 py-3 text-xs font-bold text-white shadow-md">BOX</div>
+                    </div>
+                    <p class="mt-3 text-xs text-slate-500">justify-center · items-center</p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-3">
+                    <h3 class="mb-3 text-sm font-semibold">Middle right</h3>
+                    <div class="flex h-40 items-center justify-end rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 p-3">
+                        <div class="rounded-lg bg-emerald-700 px-4 py-3 text-xs font-bold text-white shadow-sm">BOX</div>
+                    </div>
+                    <p class="mt-3 text-xs text-slate-500">justify-end · items-center</p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-3">
+                    <h3 class="mb-3 text-sm font-semibold">Bottom left</h3>
+                    <div class="flex h-40 items-end justify-start rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 p-3">
+                        <div class="rounded-lg bg-emerald-700 px-4 py-3 text-xs font-bold text-white shadow-sm">BOX</div>
+                    </div>
+                    <p class="mt-3 text-xs text-slate-500">justify-start · items-end</p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-3">
+                    <h3 class="mb-3 text-sm font-semibold">Bottom center</h3>
+                    <div class="flex h-40 items-end justify-center rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 p-3">
+                        <div class="rounded-lg bg-emerald-700 px-4 py-3 text-xs font-bold text-white shadow-sm">BOX</div>
+                    </div>
+                    <p class="mt-3 text-xs text-slate-500">justify-center · items-end</p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-3">
+                    <h3 class="mb-3 text-sm font-semibold">Bottom right</h3>
+                    <div class="flex h-40 items-end justify-end rounded-xl border-2 border-dashed border-slate-300 bg-slate-50 p-3">
+                        <div class="rounded-lg bg-emerald-700 px-4 py-3 text-xs font-bold text-white shadow-sm">BOX</div>
+                    </div>
+                    <p class="mt-3 text-xs text-slate-500">justify-end · items-end</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2: COMMUNITY COMMENTS -->
+        <section id="comments" class="scroll-mt-24 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8 lg:p-10">
+
+            <div class="mb-8">
+                <p class="text-sm font-bold uppercase tracking-widest text-emerald-700">Community</p>
+                <h2 class="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">What people are saying</h2>
+                <p class="mt-3 text-sm leading-7 text-slate-500">
+                    A flexible comment layout that keeps avatars aligned and text readable.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+
+                <article class="flex min-w-0 items-start gap-4 rounded-2xl border border-slate-200 p-4 sm:p-6">
+                    <div aria-hidden="true" class="flex size-12 shrink-0 items-center justify-center rounded-full bg-emerald-100 font-bold text-emerald-800">AN</div>
+                    <div class="min-w-0 flex-1">
+                        <div class="flex flex-wrap items-center gap-x-3 gap-y-1">
+                            <h3 class="font-bold">Aline N.</h3>
+                            <span class="text-xs text-slate-400">2 hours ago</span>
+                        </div>
+                        <p class="mt-2 text-sm leading-7 text-slate-600">
+                            Flexbox makes it easier to align an avatar and its comment. Consistent spacing makes the content comfortable to read.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="flex min-w-0 items-start gap-4 rounded-2xl border border-slate-200 p-4 sm:p-6">
+                    <div aria-hidden="true" class="flex size-12 shrink-0 items-center justify-center rounded-full bg-blue-100 font-bold text-blue-800">JM</div>
+                    <div class="min-w-0 flex-1">
+                        <div class="flex flex-wrap items-center gap-x-3 gap-y-1">
+                            <h3 class="font-bold">Jean Marc</h3>
+                            <span class="text-xs text-slate-400">Yesterday</span>
+                        </div>
+                        <p class="mt-2 break-words text-sm leading-7 text-slate-600">
+                            A comment can contain several sentences and take up more space than the avatar. The shrink-0 utility keeps the avatar at its intended size, while min-w-0 allows the text container to fit within the available space. The paragraph wraps naturally onto additional
+                            lines, making the component reliable on smaller screens. This approach also works well for messages, user profiles and notification panels.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="flex min-w-0 items-start gap-4 rounded-2xl border border-slate-200 p-4 sm:p-6">
+                    <div aria-hidden="true" class="flex size-12 shrink-0 items-center justify-center rounded-full bg-amber-100 font-bold text-amber-800">EK</div>
+                    <div class="min-w-0 flex-1">
+                        <div class="flex flex-wrap items-center gap-x-3 gap-y-1">
+                            <h3 class="font-bold">Eric K.</h3>
+                            <span class="text-xs text-slate-400">3 days ago</span>
+                        </div>
+                        <p class="mt-2 text-sm leading-7 text-slate-600">
+                            Separating horizontal and vertical alignment makes it much easier to create consistent layouts across different screen sizes.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECTION 3: DASHBOARD GRID -->
+        <section id="dashboard" class="scroll-mt-24 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8 lg:p-10">
+
+            <div class="mb-8 flex flex-wrap items-end justify-between gap-4">
+                <div>
+                    <p class="text-sm font-bold uppercase tracking-widest text-emerald-700">Overview</p>
+                    <h2 class="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">Your dashboard</h2>
+                    <p class="mt-3 text-sm leading-7 text-slate-500">
+                        A flexible grid for key information, activity and project progress.
+                    </p>
+                </div>
+
+                <span class="rounded-full bg-emerald-50 px-4 py-2 text-xs font-semibold text-emerald-800">
+                    All systems ready
+                </span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
+
+                <article class="col-span-2 rounded-2xl bg-gradient-to-br from-emerald-800 to-emerald-600 p-5 text-white sm:p-7">
+                    <p class="text-sm font-medium text-emerald-100">Welcome back</p>
+                    <h3 class="mt-3 text-2xl font-bold sm:text-3xl">Your work, organized.</h3>
+                    <p class="mt-3 max-w-lg text-sm leading-7 text-emerald-50">
+                        Keep your projects organized, follow progress and stay focused on what matters.
+                    </p>
+                    <a href="#holy-grail" class="mt-6 inline-flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-semibold text-emerald-800 transition hover:bg-emerald-50">
+                        Open workspace →
+                    </a>
+                </article>
+
+                <article class="row-span-2 rounded-2xl border border-slate-200 bg-slate-50 p-5 sm:p-6">
+                    <div class="flex size-10 items-center justify-center rounded-xl bg-blue-100 font-bold text-blue-800">A</div>
+                    <h3 class="mt-4 text-lg font-bold">Activity</h3>
+                    <p class="mt-2 text-sm leading-6 text-slate-500">Your progress at a glance.</p>
+
+                    <div class="mt-7 space-y-6">
+                        <div>
+                            <div class="mb-2 flex justify-between gap-2 text-xs">
+                                <span class="text-slate-600">Projects</span>
+                                <span class="font-bold">75%</span>
+                            </div>
+                            <div class="h-2 overflow-hidden rounded-full bg-slate-200">
+                                <div class="h-full w-3/4 rounded-full bg-emerald-600"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="mb-2 flex justify-between gap-2 text-xs">
+                                <span class="text-slate-600">Tasks</span>
+                                <span class="font-bold">50%</span>
+                            </div>
+                            <div class="h-2 overflow-hidden rounded-full bg-slate-200">
+                                <div class="h-full w-1/2 rounded-full bg-blue-600"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="mb-2 flex justify-between gap-2 text-xs">
+                                <span class="text-slate-600">Planning</span>
+                                <span class="font-bold">90%</span>
+                            </div>
+                            <div class="h-2 overflow-hidden rounded-full bg-slate-200">
+                                <div class="h-full w-[90%] rounded-full bg-violet-600"></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rounded-2xl border border-slate-200 p-5 transition hover:-translate-y-1 hover:shadow-md sm:p-6">
+                    <div class="flex size-10 items-center justify-center rounded-xl bg-emerald-50 text-lg text-emerald-700">✓</div>
+                    <p class="mt-4 text-sm text-slate-500">Completed tasks</p>
+                    <p class="mt-2 text-3xl font-bold tracking-tight">24</p>
+                    <p class="mt-2 text-xs font-semibold text-emerald-700">On track</p>
+                </article>
+
+                <article class="rounded-2xl border border-slate-200 p-5 transition hover:-translate-y-1 hover:shadow-md sm:p-6">
+                    <div class="flex size-10 items-center justify-center rounded-xl bg-amber-50 text-lg text-amber-700">◷</div>
+                    <p class="mt-4 text-sm text-slate-500">Pending tasks</p>
+                    <p class="mt-2 text-3xl font-bold tracking-tight">08</p>
+                    <p class="mt-2 text-xs font-semibold text-amber-700">In progress</p>
+                </article>
+
+                <article class="rounded-2xl border border-slate-200 p-5 transition hover:-translate-y-1 hover:shadow-md sm:p-6">
+                    <div class="flex size-10 items-center justify-center rounded-xl bg-blue-50 text-lg text-blue-700">♧</div>
+                    <p class="mt-4 text-sm text-slate-500">Team members</p>
+                    <p class="mt-2 text-3xl font-bold tracking-tight">12</p>
+                    <p class="mt-2 text-xs text-slate-500">Across all projects</p>
+                </article>
+
+                <article class="rounded-2xl border border-slate-200 p-5 transition hover:-translate-y-1 hover:shadow-md sm:p-6">
+                    <div class="flex size-10 items-center justify-center rounded-xl bg-violet-50 text-lg text-violet-700">▣</div>
+                    <p class="mt-4 text-sm text-slate-500">Upcoming tasks</p>
+                    <p class="mt-2 text-3xl font-bold tracking-tight">05</p>
+                    <p class="mt-2 text-xs text-slate-500">Due this week</p>
+                </article>
+
+                <article class="col-span-full rounded-2xl border border-slate-200 bg-slate-50 p-5 sm:p-6">
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+                        <div>
+                            <h3 class="text-lg font-bold">Project summary</h3>
+                            <p class="mt-1 text-sm leading-6 text-slate-500">
+                                Your projects and tasks are organized in one place.
+                            </p>
+                        </div>
+                        <span class="rounded-full bg-emerald-100 px-3 py-2 text-xs font-bold text-emerald-800">
+                            Ready to go
+                        </span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECTION 4: HOLY GRAIL LAYOUT -->
+        <section id="holy-grail" class="scroll-mt-24 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8 lg:p-10">
+
+            <div class="mb-8">
+                <p class="text-sm font-bold uppercase tracking-widest text-emerald-700">Workspace</p>
+                <h2 class="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">A complete page layout</h2>
+                <p class="mt-3 max-w-2xl text-sm leading-7 text-slate-500">
+                    A responsive workspace with a header, sidebar, flexible content area and footer.
+                </p>
+            </div>
+
+            <div class="grid min-h-[520px] grid-rows-[auto_1fr_auto] overflow-hidden rounded-2xl border border-slate-200">
+
+                <header class="flex flex-wrap items-center justify-between gap-3 bg-emerald-800 px-5 py-5 text-white">
+                    <a href="#home" class="text-lg font-bold">
+                        My Workspace<span class="text-emerald-300">.</span>
+                    </a>
+                    <span class="rounded-full bg-white/15 px-3 py-2 text-xs text-emerald-50">
+                        Personal dashboard
+                    </span>
+                </header>
+
+                <div class="grid grid-cols-1 md:grid-cols-[220px_minmax(0,1fr)]">
+
+                    <aside class="border-b border-slate-200 bg-emerald-50 p-4 md:border-b-0 md:border-r sm:p-5">
+                        <h3 class="mb-4 px-3 text-xs font-bold uppercase tracking-widest text-emerald-700">
+                            Menu
+                        </h3>
+
+                        <nav aria-label="Workspace navigation" class="space-y-1">
+                            <a href="#dashboard" class="block rounded-xl bg-emerald-100 px-4 py-3 text-sm font-semibold text-emerald-800">Dashboard</a>
+                            <a href="#comments" class="block rounded-xl px-4 py-3 text-sm text-slate-600 transition hover:bg-white hover:text-emerald-800">Community</a>
+                            <a href="#positions" class="block rounded-xl px-4 py-3 text-sm text-slate-600 transition hover:bg-white hover:text-emerald-800">Layouts</a>
+                            <a href="#home" class="block rounded-xl px-4 py-3 text-sm text-slate-600 transition hover:bg-white hover:text-emerald-800">Home</a>
+                        </nav>
+                    </aside>
+
+                    <div class="min-w-0 p-5 sm:p-8">
+
+                        <div class="flex flex-wrap items-start justify-between gap-4">
+                            <div>
+                                <p class="text-xs font-bold uppercase tracking-widest text-emerald-700">Workspace overview</p>
+                                <h3 class="mt-2 text-2xl font-bold">Everything in its place.</h3>
+                            </div>
+                            <span class="rounded-full bg-emerald-50 px-3 py-2 text-xs font-semibold text-emerald-800">Active</span>
+                        </div>
+
+                        <p class="mt-4 max-w-2xl text-sm leading-7 text-slate-600">
+                            The main content automatically fills the remaining space beside the sidebar. On smaller screens, the sidebar moves above the content to keep the layout easy to use.
+                        </p>
+
+                        <div class="mt-7 grid gap-4 sm:grid-cols-2">
+                            <article class="rounded-2xl border border-slate-200 p-5">
+                                <div class="flex size-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700">▦</div>
+                                <h4 class="mt-4 font-bold">Flexible content</h4>
+                                <p class="mt-2 text-sm leading-6 text-slate-500">
+                                    The main area expands naturally to use the available width.
+                                </p>
+                            </article>
+
+                            <article class="rounded-2xl border border-slate-200 p-5">
+                                <div class="flex size-10 items-center justify-center rounded-xl bg-blue-50 text-blue-700">↔</div>
+                                <h4 class="mt-4 font-bold">Responsive sidebar</h4>
+                                <p class="mt-2 text-sm leading-6 text-slate-500">
+                                    The 220-pixel sidebar sits beside the content on larger screens.
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="mt-5 rounded-2xl bg-slate-50 p-5">
+                            <h4 class="font-bold">Layout status</h4>
+                            <div class="mt-4 flex flex-wrap gap-2">
+                                <span class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs text-slate-600">Header</span>
+                                <span class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs text-slate-600">Sidebar</span>
+                                <span class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs text-slate-600">Main content</span>
+                                <span class="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs text-slate-600">Footer</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <footer class="border-t border-emerald-100 bg-emerald-50 px-5 py-5 text-center text-sm text-emerald-800">
+                    Designed for clarity. Built for every screen.
+                </footer>
+
+            </div>
+        </section>
+
+        <!-- SECTION 5: KEY CONCEPTS -->
+        <section class="rounded-3xl border border-emerald-100 bg-emerald-50 p-6 sm:p-10">
+
+            <div class="max-w-2xl">
+                <p class="text-sm font-bold uppercase tracking-widest text-emerald-700">The essentials</p>
+                <h2 class="mt-3 text-2xl font-bold tracking-tight text-emerald-950 sm:text-3xl">
+                    Good layouts make everything clearer.
+                </h2>
+                <p class="mt-4 text-sm leading-7 text-slate-600">
+                    Combine flexible alignment, consistent spacing and responsive grids to build interfaces that work across different devices.
+                </p>
+            </div>
+
+            <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+                <article class="rounded-2xl border border-emerald-100 bg-white p-5">
+                    <div class="flex size-11 items-center justify-center rounded-xl bg-emerald-100 text-lg text-emerald-800">↔</div>
+                    <h3 class="mt-4 font-bold text-slate-800">Flexbox</h3>
+                    <p class="mt-2 text-sm leading-6 text-slate-600">
+                        Align elements with flex, justify-*, items-* and gap-*.
+                    </p>
+                </article>
+
+                <article class="rounded-2xl border border-emerald-100 bg-white p-5">
+                    <div class="flex size-11 items-center justify-center rounded-xl bg-emerald-100 text-lg text-emerald-800">▦</div>
+                    <h3 class="mt-4 font-bold text-slate-800">CSS Grid</h3>
+                    <p class="mt-2 text-sm leading-6 text-slate-600">
+                        Organize content with grid-cols-*, col-span-* and row-span-*.
+                    </p>
+                </article>
+
+                <article class="rounded-2xl border border-emerald-100 bg-white p-5">
+                    <div class="flex size-11 items-center justify-center rounded-xl bg-emerald-100 text-lg text-emerald-800">◉</div>
+                    <h3 class="mt-4 font-bold text-slate-800">Responsive design</h3>
+                    <p class="mt-2 text-sm leading-6 text-slate-600">
+                        Adapt layouts to phones, tablets and desktops with responsive variants.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MAIN FOOTER -->
+    <footer class="border-t border-emerald-100 bg-emerald-50 px-5 py-6">
+        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 sm:flex-row">
+
+            <a href="#home" class="text-lg font-extrabold text-emerald-800">
+                LayoutLab<span class="text-emerald-500">.</span>
+            </a>
+
+            <p class="text-center text-sm text-slate-600">
+                Learning layouts, one step at a time.
+            </p>
+
+            <a href="#home" class="text-sm font-semibold text-emerald-800 transition hover:text-emerald-600">
+                Back to top ↑
+            </a>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
