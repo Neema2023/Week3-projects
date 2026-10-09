@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Layout Gym</title>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+
+    <nav class="absolute top-4 right-4 sm:top-8 sm:right-8 flex gap-2">
+        <a href="../Task2-Layout/layouts.html" class="text-xs sm:text-sm bg-emerald-600 text-white px-3 py-2 rounded-lg hover:bg-emerald-700 transition-colors">
+        Assignment 2
+    </a>
+
+
+        <a href="../Task3-Responsive/responsive.html" class="text-xs sm:text-sm bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+        Assignment 3
+    </a>
+        <a href="../Task1-Profile-Card/index.html" class="text-xs sm:text-sm bg-graygi-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+        back to home
+    </a>
+
+
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-green-700 px-6 py-8 text-white">
+        <div class="mx-auto max-w-7xl">
+            <h1 class="text-4xl font-bold">Layout Gym</h1>
+            <p class="mt-2 text-green-100">
+                Five Tailwind CSS layout exercises
+            </p>
+        </div>
+    </header>
+
+
+    <main class="mx-auto max-w-7xl px-6 py-10">
+
+
+        <!-- Exercise 1 -->
+        <section class="mb-16">
+
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold">Exercise 1 — Nine Positions</h2>
+                <p class="mt-1 text-gray-600">
+                    Practice horizontal and vertical alignment with Flexbox.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+
+                <!-- Top Left -->
+                <div class="rounded-lg bg-white p-4 shadow">
+                    <p class="mb-3 font-semibold">Top Left</p>
+
+                    <div class="flex h-48 items-start justify-start rounded border-2 border-dashed border-gray-300 bg-gray-50 p-3">
+                        <div class="flex h-12 w-12 items-center justify-center rounded bg-green-600 font-bold text-white">
+                            1
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Top Center -->
+                <div class="rounded-lg bg-white p-4 shadow">
+                    <p class="mb-3 font-semibold">Top Center</p>
+
+                    <div class="flex h-48 items-start justify-center rounded border-2 border-dashed border-gray-300 bg-gray-50 p-3">
+                        <div class="flex h-12 w-12 items-center justify-center rounded bg-green-600 font-bold text-white">
+                            2
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Top Right -->
+                <div class="rounded-lg bg-white p-4 shadow">
+                    <p class="mb-3 font-semibold">Top Right</p>
+
+                    <div class="flex h-48 items-start justify-end rounded border-2 border-dashed border-gray-300 bg-gray-50 p-3">
+                        <div class="flex h-12 w-12 items-center justify-center rounded bg-green-600 font-bold text-white">
+                            3
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Middle Left -->
+                <div class="rounded-lg bg-white p-4 shadow">
+                    <p class="mb-3 font-semibold">Middle Left</p>
+
+                    <div class="flex h-48 items-center justify-start rounded border-2 border-dashed border-gray-300 bg-gray-50 p-3">
+                        <div class="flex h-12 w-12 items-center justify-center rounded bg-green-600 font-bold text-white">
+                            4
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Center -->
+                <div class="rounded-lg bg-white p-4 shadow">
+                    <p class="mb-3 font-semibold">Center</p>
+
+                    <div class="flex h-48 items-center justify-center rounded border-2 border-dashed border-gray-300 bg-gray-50 p-3">
+                        <div class="flex h-12 w-12 items-center justify-center rounded bg-green-600 font-bold text-white">
+                            5
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Middle Right -->
+                <div class="rounded-lg bg-white p-4 shadow">
+                    <p class="mb-3 font-semibold">Middle Right</p>
+
+                    <div class="flex h-48 items-center justify-end rounded border-2 border-dashed border-gray-300 bg-gray-50 p-3">
+                        <div class="flex h-12 w-12 items-center justify-center rounded bg-green-600 font-bold text-white">
+                            6
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Bottom Left -->
+                <div class="rounded-lg bg-white p-4 shadow">
+                    <p class="mb-3 font-semibold">Bottom Left</p>
+
+                    <div class="flex h-48 items-end justify-start rounded border-2 border-dashed border-gray-300 bg-gray-50 p-3">
+                        <div class="flex h-12 w-12 items-center justify-center rounded bg-green-600 font-bold text-white">
+                            7
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Bottom Center -->
+                <div class="rounded-lg bg-white p-4 shadow">
+                    <p class="mb-3 font-semibold">Bottom Center</p>
+
+                    <div class="flex h-48 items-end justify-center rounded border-2 border-dashed border-gray-300 bg-gray-50 p-3">
+                        <div class="flex h-12 w-12 items-center justify-center rounded bg-green-600 font-bold text-white">
+                            8
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Bottom Right -->
+                <div class="rounded-lg bg-white p-4 shadow">
+                    <p class="mb-3 font-semibold">Bottom Right</p>
+
+                    <div class="flex h-48 items-end justify-end rounded border-2 border-dashed border-gray-300 bg-gray-50 p-3">
+                        <div class="flex h-12 w-12 items-center justify-center rounded bg-green-600 font-bold text-white">
+                            9
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Exercise 2 -->
+        <section class="mb-16">
+
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold">Exercise 2 — Navbar</h2>
+                <p class="mt-1 text-gray-600">
+                    A navigation bar with a logo, four links and a sign-up button.
+                </p>
+            </div>
+
+            <nav class="flex flex-wrap items-center justify-between gap-6 rounded-xl bg-white px-6 py-4 shadow">
+
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-green-600">
+                    Layout<span class="text-gray-900">Gym</span>
+                </div>
+
+                <!-- Links -->
+                <div class="flex flex-wrap gap-6 font-medium">
+                    <a href="#" class="hover:text-green-600">Home</a>
+                    <a href="#" class="hover:text-green-600">About</a>
+                    <a href="#" class="hover:text-green-600">Services</a>
+                    <a href="#" class="hover:text-green-600">Contact</a>
+                </div>
+
+                <!-- Sign Up -->
+                <button class="rounded-lg bg-green-600 px-5 py-2.5 font-semibold text-white transition hover:bg-green-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">
+                    Sign up
+                </button>
+
+            </nav>
+        </section>
+
+
+        <!-- Exercise 3 -->
+        <section class="mb-16">
+
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold">Exercise 3 — Comment List</h2>
+                <p class="mt-1 text-gray-600">
+                    Three comments using the media-object pattern.
+                </p>
+            </div>
+
+            <div class="space-y-5">
+
+                <!-- Comment 1 -->
+                <article class="flex gap-4 rounded-xl bg-white p-5 shadow">
+
+                    <div class="shrink-0">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-600 text-lg font-bold text-white">
+                            A
+                        </div>
+                    </div>
+
+                    <div class="min-w-0">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <h3 class="font-bold">Alice</h3>
+                            <span class="text-sm text-gray-500">2 minutes ago</span>
+                        </div>
+
+                        <p class="mt-2 text-gray-600">
+                            I really like the new dashboard design. It is simple, clean and easy to understand.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <!-- Comment 2 -->
+                <article class="flex gap-4 rounded-xl bg-white p-5 shadow">
+
+                    <div class="shrink-0">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500 text-lg font-bold text-white">
+                            B
+                        </div>
+                    </div>
+
+                    <div class="min-w-0">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <h3 class="font-bold">Brian</h3>
+                            <span class="text-sm text-gray-500">10 minutes ago</span>
+                        </div>
+
+                        <p class="mt-2 break-words text-gray-600">
+                            This is a very long comment created specifically to demonstrate the media-object pattern. The avatar should remain the same size even when the comment contains a lot of text. The text area should shrink properly and stay inside the available space without
+                            pushing the avatar away or breaking the layout. This is why the avatar uses shrink-0 and the text container uses min-w-0.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <!-- Comment 3 -->
+                <article class="flex gap-4 rounded-xl bg-white p-5 shadow">
+
+                    <div class="shrink-0">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-700 text-lg font-bold text-white">
+                            C
+                        </div>
+                    </div>
+
+                    <div class="min-w-0">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <h3 class="font-bold">Carol</h3>
+                            <span class="text-sm text-gray-500">20 minutes ago</span>
+                        </div>
+
+                        <p class="mt-2 text-gray-600">
+                            The layout works well on different screen sizes.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Exercise 4 -->
+        <section class="mb-16">
+
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold">Exercise 4 — Dashboard Grid</h2>
+                <p class="mt-1 text-gray-600">
+                    A four-column dashboard using column and row spans.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-4">
+
+                <!-- Card 1 -->
+                <div class="rounded-xl bg-green-600 p-6 text-white shadow md:col-span-2">
+                    <p class="text-sm font-medium text-green-100">
+                        Total Students
+                    </p>
+
+                    <h3 class="mt-2 text-4xl font-bold">
+                        1,250
+                    </h3>
+
+                    <p class="mt-2 text-sm text-green-100">
+                        Students currently registered
+                    </p>
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="rounded-xl bg-white p-6 shadow">
+                    <p class="text-sm text-gray-500">
+                        Teachers
+                    </p>
+
+                    <h3 class="mt-2 text-3xl font-bold">
+                        85
+                    </h3>
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="row-span-2 rounded-xl bg-gray-700 p-6 text-white shadow">
+                    <p class="text-sm text-gray-300">
+                        Recent Activity
+                    </p>
+
+                    <div class="mt-6 space-y-5">
+
+                        <div>
+                            <p class="font-semibold">New student</p>
+                            <p class="text-sm text-gray-300">
+                                John joined today
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="font-semibold">Assignment added</p>
+                            <p class="text-sm text-gray-300">
+                                Mathematics assignment
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="font-semibold">New teacher</p>
+                            <p class="text-sm text-gray-300">
+                                Sarah joined the team
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Card 4 -->
+                <div class="rounded-xl bg-white p-6 shadow">
+                    <p class="text-sm text-gray-500">
+                        Courses
+                    </p>
+
+                    <h3 class="mt-2 text-3xl font-bold">
+                        32
+                    </h3>
+                </div>
+
+
+                <!-- Card 5 -->
+                <div class="rounded-xl bg-white p-6 shadow">
+                    <p class="text-sm text-gray-500">
+                        Assignments
+                    </p>
+
+                    <h3 class="mt-2 text-3xl font-bold">
+                        148
+                    </h3>
+                </div>
+
+
+                <!-- Card 6 -->
+                <div class="rounded-xl bg-green-700 p-6 text-white shadow md:col-span-full">
+
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+
+                        <div>
+                            <p class="text-sm text-green-100">
+                                School Performance
+                            </p>
+
+                            <h3 class="mt-1 text-2xl font-bold">
+                                92% Overall Performance
+                            </h3>
+                        </div>
+
+                        <button class="rounded-lg bg-white px-5 py-2 font-semibold text-green-700 hover:bg-green-50">
+                            View Report
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Exercise 5 -->
+        <section class="mb-16">
+
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold">Exercise 5 — Holy Grail</h2>
+                <p class="mt-1 text-gray-600">
+                    Header, 220px sidebar, main content and footer at the bottom.
+                </p>
+            </div>
+
+            <div class="flex min-h-screen flex-col overflow-hidden rounded-xl border bg-white shadow">
+
+                <!-- Header -->
+                <header class="flex items-center justify-between bg-green-700 px-6 py-5 text-white">
+
+                    <div>
+                        <h3 class="text-xl font-bold">
+                            Student Portal
+                        </h3>
+
+                        <p class="text-sm text-green-100">
+                            Administration Dashboard
+                        </p>
+                    </div>
+
+                    <div class="rounded-full bg-green-600 px-4 py-2 text-sm">
+                        Admin
+                    </div>
+
+                </header>
+
+
+                <!-- Content -->
+                <div class="flex flex-1">
+
+                    <!-- Sidebar -->
+                    <aside class="w-[220px] shrink-0 bg-gray-100 p-5 text-gray-800">
+
+                        <h3 class="mb-5 font-bold text-gray-500">
+                            MENU
+                        </h3>
+
+                        <nav class="space-y-2">
+
+                            <a href="#" class="block rounded-lg bg-green-600 px-4 py-3 text-white">
+                                Dashboard
+                            </a>
+
+                            <a href="#" class="block rounded-lg px-4 py-3 hover:bg-green-50">
+                                Students
+                            </a>
+
+                            <a href="#" class="block rounded-lg px-4 py-3 hover:bg-green-50">
+                                Teachers
+                            </a>
+
+                            <a href="#" class="block rounded-lg px-4 py-3 hover:bg-green-50">
+                                Courses
+                            </a>
+
+                            <a href="#" class="block rounded-lg px-4 py-3 hover:bg-green-50">
+                                Reports
+                            </a>
+
+                        </nav>
+
+                    </aside>
+
+
+                    <!-- Main -->
+                    <main class="flex-1 bg-gray-50 p-8">
+
+                        <h3 class="text-2xl font-bold">
+                            Dashboard
+                        </h3>
+
+                        <p class="mt-2 text-gray-600">
+                            Welcome to the student administration portal.
+                        </p>
+
+                        <div class="mt-8 grid gap-5 md:grid-cols-3">
+
+                            <div class="rounded-xl bg-white p-6 shadow">
+                                <p class="text-sm text-gray-500">
+                                    Students
+                                </p>
+
+                                <h4 class="mt-2 text-3xl font-bold">
+                                    1,250
+                                </h4>
+                            </div>
+
+                            <div class="rounded-xl bg-white p-6 shadow">
+                                <p class="text-sm text-gray-500">
+                                    Teachers
+                                </p>
+
+                                <h4 class="mt-2 text-3xl font-bold">
+                                    85
+                                </h4>
+                            </div>
+
+                            <div class="rounded-xl bg-white p-6 shadow">
+                                <p class="text-sm text-gray-500">
+                                    Courses
+                                </p>
+
+                                <h4 class="mt-2 text-3xl font-bold">
+                                    32
+                                </h4>
+                            </div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+
+                <!-- Footer -->
+                <footer class="bg-gray-200 px-6 py-5 text-center text-sm text-gray-600">
+                    © 2026 Student Portal. All rights reserved.
+                </footer>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
+
+</html>
